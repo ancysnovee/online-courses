@@ -12,4 +12,4 @@ def courses():
 
 
 
-risk mitigation startegies
+# risk mitigation startegies
