@@ -1,8 +1,9 @@
 pipeline{
+    agent any
     stages{
         stage('clone repo'){
             steps{
-                git credentialsId : '', url : 'https://github.com/ancysnovee/online-courses.git', branch : 'main'
+                git credentialsId : 'platform-token', url : 'https://github.com/ancysnovee/online-courses.git', branch : 'main'
             }
         }
         stage('dependency'){
