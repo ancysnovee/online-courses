@@ -11,7 +11,7 @@ pipeline{
                 bat '''
                 python -m venv venv
                 call venv\\Scripts\\activate
-                pthon -m pip install --upgrade pip
+                ptyhon -m pip install --upgrade pip
                 pip install pytest
                 '''
             }
