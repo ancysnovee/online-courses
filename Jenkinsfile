@@ -6,7 +6,7 @@ pipeline{
                 git credentialsId : 'platform-token', url : 'https://github.com/ancysnovee/online-courses.git', branch : 'main'
             }
         }
-        stage('dependency'){
+        stage('dependency installation'){
             steps{
                 bat '''
                 python -m venv venv
